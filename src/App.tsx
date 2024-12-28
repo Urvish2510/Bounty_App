@@ -10,9 +10,9 @@ import { Newsletter } from "./components/Newsletter";
 import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
-import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
+import { QuickIntro } from "./components/QuickIntro";
 import "./App.css";
 
 function App() {
@@ -20,12 +20,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
       <About />
+      <QuickIntro />
       <HowItWorks />
-      <Features />
       <Services />
-      <Cta />
       <Testimonials />
       <Team />
       <Pricing />

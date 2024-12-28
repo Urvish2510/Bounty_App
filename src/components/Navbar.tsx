@@ -15,30 +15,35 @@ import {
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
-import { ModeToggle } from "./mode-toggle";
+import { ModeToggle, NavbarToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
   label: string;
+  items: Array<string>;
 }
 
 const routeList: RouteProps[] = [
   {
     href: "#features",
-    label: "Features",
+    label: "Getting Started",
+    items: ["Features", "How It Works", "Pricing"],
   },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "Test Your Knowledge",
+    items: ["Testimonials", "Team"],
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Guide",
+    items: ["Services", "Cta", "Newsletter"],
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "Our Community",
+    items: ["FAQ", "Footer"],
   },
 ];
 
@@ -63,10 +68,7 @@ export const Navbar = () => {
           <span className="flex md:hidden">
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
@@ -93,17 +95,18 @@ export const Navbar = () => {
                     >
                       {label}
                     </a>
+                    // <ModeToggle />
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="#"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
                     <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    Sign In
                   </a>
                 </nav>
               </SheetContent>
@@ -111,30 +114,32 @@ export const Navbar = () => {
           </span>
 
           {/* desktop */}
-          <nav className="hidden md:flex gap-2">
+          <nav className="hidden md:flex gap-5">
             {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
-                key={i}
-                className={`text-[17px] ${buttonVariants({
-                  variant: "ghost",
-                })}`}
-              >
-                {route.label}
-              </a>
+              // <a
+              //   rel="noreferrer noopener"
+              //   href={route.href}
+              //   key={i}
+              //   className={`text-[17px] ${buttonVariants({
+              //     variant: "ghost",
+              //   })}`}
+              // >
+              //   {route.label}
+              // </a>
+              // <ModeToggle data/>
+              <NavbarToggle data={route} key={i} />
             ))}
           </nav>
 
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="#"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
               <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              Sign In
             </a>
 
             <ModeToggle />

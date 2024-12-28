@@ -23,40 +23,40 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
+    imageUrl: "#",
+    name: "Demo demo",
     position: "Product Manager",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "#",
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
+        url: "#",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "",
       },
     ],
   },
   {
     imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
+    name: "Demo demo",
     position: "Tech Lead",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "",
       },
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
+        url: "",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "",
       },
     ],
   },
@@ -67,7 +67,7 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "#",
       },
 
       {
@@ -83,7 +83,7 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "#",
       },
       {
         name: "Facebook",

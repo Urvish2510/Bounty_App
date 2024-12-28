@@ -20,16 +20,13 @@ export const HeroCards = () => {
       <Card className="absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar>
-            <AvatarImage
-              alt=""
-              src="https://github.com/shadcn.png"
-            />
+            <AvatarImage alt="" src="https://github.com/shadcn.png" />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">Lorem, ipsum.</CardTitle>
+            <CardDescription>Lorem.</CardDescription>
           </div>
         </CardHeader>
 
@@ -44,7 +41,7 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">Lorem, ipsum dolor.</CardTitle>
           <CardDescription className="font-normal text-primary">
             Frontend Developer
           </CardDescription>
@@ -61,7 +58,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
+              href="#"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -73,7 +70,7 @@ export const HeroCards = () => {
             </a>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="#"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -94,7 +91,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
+              href="#"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -113,10 +110,7 @@ export const HeroCards = () => {
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
             Free
-            <Badge
-              variant="secondary"
-              className="text-sm text-primary"
-            >
+            <Badge variant="secondary" className="text-sm text-primary">
               Most popular
             </Badge>
           </CardTitle>
@@ -140,10 +134,7 @@ export const HeroCards = () => {
           <div className="space-y-4">
             {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
               (benefit: string) => (
-                <span
-                  key={benefit}
-                  className="flex"
-                >
+                <span key={benefit} className="flex">
                   <Check className="text-green-500" />{" "}
                   <h3 className="ml-2">{benefit}</h3>
                 </span>
